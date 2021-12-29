@@ -1,0 +1,58 @@
+.communication {
+  color: @base-color;
+  background-color: #ffffff;
+}
+
+.communication__title-text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 45px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__address {
+  .indent-none();
+}
+
+.contacts__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  margin-left: 118px;
+  margin-right: 118px;
+
+  &--address {
+    margin-left: 61px;
+    margin-right: 61px;
+  }
+}
+
+.contacts__email,
+.contacts__phone,
+.contacts__address {
+  .decoration-none();
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: #d22856;
+  padding-top: 15px;
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+.contacts__email,
+.contacts__phone {
+  display: block;
+}
+
