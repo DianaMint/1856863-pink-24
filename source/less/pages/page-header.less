@@ -1,15 +1,52 @@
 .page-header {
+  position: absolute;
   color: #ffffff;
   font-family: @base-ff;
-  background-color: fade(#000000, 30%);
+  background-color: @base-color;
   width: 100%;
-  padding: 20px, 20px;
+  height: 69px;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-header__logo {
   display: block;
   padding-top: 22px;
-  padding-bottom: 21px;
   padding-left: 20px;
-  position: relative;
+  height: 23px;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    height: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 40px;
+  }
 }
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    height: 110px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    .indent-none();
+
+    margin-left: 130px;
+  }
+}
+

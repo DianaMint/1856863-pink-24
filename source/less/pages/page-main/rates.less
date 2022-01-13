@@ -1,9 +1,18 @@
 .rates {
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
 }
 
 .rates__list {
   .ul-none();
+
+  display: flex;
+  flex-direction: column;
+}
+
+.rates__background {
+  background-color: @base-color;
 }
 
 .rates__title {
@@ -40,5 +49,30 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
-  padding-left: 22px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-left: 42px;
+  padding-right: 39px;
+}
+
+.rates__features,
+.rates__included {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.rates__toggles {
+  .indent-none();
+
+  display: flex;
+  padding-left: 122px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: @gray-bg;
+}
+
+@media (min-width: @tablet-width) {
+  .rates__toggles {
+    display: none;
+  }
 }

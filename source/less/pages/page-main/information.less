@@ -22,3 +22,48 @@
   margin-top: 46px;
   margin-bottom: 30px;
 }
+
+@media (min-width: @tablet-width) {
+  .information__title,
+  .information__intro {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 54px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .information__title {
+    margin: 0;
+    margin-top: 58px;
+  }
+
+  .information__intro {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .information__title {
+    .indent-none();
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+    margin-top: 70px;
+  }
+
+  .information__intro {
+    .indent-none();
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+    padding-left: 270px;
+    padding-right: 270px;
+  }
+}

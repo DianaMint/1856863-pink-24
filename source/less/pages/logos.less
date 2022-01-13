@@ -1,0 +1,33 @@
+@media (min-width: 0) and (max-width: @tablet-width) {
+  .logo__glasses {
+    display: none;
+  }
+
+  .logo__desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  .logo__desktop {
+    display: none;
+  }
+
+  .logo__glasses {
+    display: inline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo__pink {
+    display: none;
+  }
+
+  .logo__glasses {
+    display: none;
+  }
+
+  .logo__desktop {
+    display: block;
+  }
+}
