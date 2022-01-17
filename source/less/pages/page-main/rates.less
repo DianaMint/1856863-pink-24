@@ -75,4 +75,32 @@
   .rates__toggles {
     display: none;
   }
+
+  .rates__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .features-titles--smiley {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .features-titles--comments {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .rates__item--basic {
+    grid-column: 2 / 3;
+  }
+
+  .rates__item--standard {
+    grid-column: 3 / 4;
+  }
+
+  .rates__item--unlim {
+    grid-column: 4 / 5;
+  }
 }
